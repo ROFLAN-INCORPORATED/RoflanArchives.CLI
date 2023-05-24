@@ -5,6 +5,13 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<RootNamespace>RoflanArchive.CLI</RootNamespace>
+    <AssemblyName>RoflanArchive.CLI</AssemblyName>
+    <Product>RoflanArchive.CLI</Product>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+    <Version>1.1.0</Version>
+    <Description>CLI tool for working with roflan engine archive files (*.roflarc)</Description>
   </PropertyGroup>
 
 </Project>
