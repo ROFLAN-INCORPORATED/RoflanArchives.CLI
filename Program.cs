@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 
-namespace RoflanArchive.CLI;
+namespace RoflanArchives.CLI;
 
 internal class Program
 {
