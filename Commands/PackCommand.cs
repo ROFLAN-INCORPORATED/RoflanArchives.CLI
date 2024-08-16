@@ -37,7 +37,7 @@ internal sealed class PackCommand
                 new RoflanArchiveSourceDirectoryInfo(source));
         var outputDirectoryPath = Path.GetDirectoryName(output)
                                   ?? Environment.CurrentDirectory;
-        var outputFileName = Path.GetFileName(output);
+        var outputFileName = Path.GetFileNameWithoutExtension(output);
         var versionApi = string.IsNullOrWhiteSpace(version)
             ? null
             : new Version(version);
