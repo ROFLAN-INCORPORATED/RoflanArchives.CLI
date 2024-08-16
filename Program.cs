@@ -4,7 +4,7 @@ using RoflanArchives.CLI.Commands;
 
 namespace RoflanArchives.CLI;
 
-internal sealed class Program
+internal static class Program
 {
     private static void Main(
         string[] args)
