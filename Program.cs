@@ -11,10 +11,14 @@ internal static class Program
     {
         var app = ConsoleApp.Create();
 
+        // ReSharper disable InvocationIsSkipped
+
         app.Add<PackCommand>(
             "pack");
         app.Add<UnpackCommand>(
             "unpack");
+
+        // ReSharper restore InvocationIsSkipped
 
         app.Run(args);
     }
