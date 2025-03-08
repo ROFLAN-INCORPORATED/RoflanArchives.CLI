@@ -6,6 +6,8 @@ using RoflanArchives.Core;
 
 namespace RoflanArchives.CLI.Commands;
 
+// ReSharper disable UnusedMember.Global
+
 // ReSharper disable once ClassCannotBeInstantiated
 // ReSharper disable once ClassNeverInstantiated.Global
 internal sealed class PackCommand
@@ -46,4 +48,18 @@ internal sealed class PackCommand
             outputDirectoryPath, outputFileName, sourcesInfo,
             compressionType, compressionLevel, name, versionApi);
     }
+
+    /// <summary>
+    /// Pack archives using 'file' definition file (.json).
+    /// </summary>
+    /// <param name="file">-f, Definition file (.json) path.</param>
+    [Command("definition")]
+    public void Pack(
+        [Argument] string file)
+    {
+        RoflanArchive.Pack(
+            file);
+    }
 }
+
+// ReSharper restore UnusedMember.Global

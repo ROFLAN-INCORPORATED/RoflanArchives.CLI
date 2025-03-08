@@ -4,6 +4,8 @@ using RoflanArchives.Core;
 
 namespace RoflanArchives.CLI.Commands;
 
+// ReSharper disable UnusedMember.Global
+
 // ReSharper disable once ClassCannotBeInstantiated
 // ReSharper disable once ClassNeverInstantiated.Global
 internal sealed class UnpackCommand
@@ -26,3 +28,5 @@ internal sealed class UnpackCommand
             source, output);
     }
 }
+
+// ReSharper restore UnusedMember.Global
